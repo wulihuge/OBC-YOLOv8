@@ -1,0 +1,8 @@
+path: /home/lzh/yolov8/datasets/RDDChina
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 6
+names: ['D00','D10', 'D20','D40','Repair','Block crack']
+

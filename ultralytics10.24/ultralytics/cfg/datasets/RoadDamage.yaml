@@ -1,0 +1,21 @@
+path: /home/lzh/yolov8/datasets/RoadDamage
+train: ../train/images
+# train: ../valid/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['Alligator Cracks', 
+        'Damaged crosswalk', 
+        'Damaged paint', 
+        'Longitudinal Cracks', 
+        'Manhole cover', 
+        'Potholes', 
+        'Transverse Cracks']
+
+roboflow:
+  workspace: new-workspace-kj87b
+  project: road-damage-detection-iicdh
+  version: 10
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/new-workspace-kj87b/road-damage-detection-iicdh/dataset/10

@@ -1,0 +1,11 @@
+path: ../datasets/Traffic
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4   
+names:
+  0: bus
+  1: car 
+  2: truck
+  3: undefined

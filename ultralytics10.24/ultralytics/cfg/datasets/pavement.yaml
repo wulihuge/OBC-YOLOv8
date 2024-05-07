@@ -1,0 +1,14 @@
+path: /home/lzh/yolov8/datasets/pavement_cracks
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['alligator cracking', 'edge cracking', 'longitudinal cracking', 'patching', 'pothole', 'rutting', 'transverse cracking']
+
+roboflow:
+  workspace: wzhen-vt-edu
+  project: pavement-cracks-2wi3m
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/wzhen-vt-edu/pavement-cracks-2wi3m/dataset/1

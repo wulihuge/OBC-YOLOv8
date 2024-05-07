@@ -1,0 +1,10 @@
+
+train : /home/lzh/yolov8/datasets/road_crack_voc/2007_train.txt
+val : /home/lzh/yolov8/datasets/road_crack_voc/2007_valid.txt
+
+
+#number of class
+nc : 10
+
+# class name 
+names : ['D00', 'D01','D11','D10','D20','D40','D43','D44','D50', 'D0w0']
