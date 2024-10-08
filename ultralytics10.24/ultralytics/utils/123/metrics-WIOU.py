@@ -83,7 +83,7 @@ def bbox_iou(box1, box2, xywh=True, type_='WIoU',eps=1e-7):
         b2_x1, b2_y1, b2_x2, b2_y2 = box2.chunk(4, -1)
         w1, h1 = b1_x2 - b1_x1, b1_y2 - b1_y1 + eps
         w2, h2 = b2_x2 - b2_x1, b2_y2 - b2_y1 + eps
-    # 将边界框信息拼接
+    
     b1 = torch.stack([b1_x1, b1_y1, b1_x2, b1_y2], dim=-1)
     b2 = torch.stack([b2_x1, b2_y1, b2_x2, b2_y2], dim=-1)
     self = IoU_Cal(b1, b2)
