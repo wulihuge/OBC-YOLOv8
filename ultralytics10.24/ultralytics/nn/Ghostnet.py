@@ -61,4 +61,3 @@ class GGhostRegNet(nn.Module):
  
     def forward(self, x):
         return self.conv(x) + self.shortcut(x)
-#详细的各类改进方法和流程操作，请关注B站博主：AI学术叫叫兽 
