@@ -67,12 +67,12 @@ class BboxLoss(nn.Module):
         # loss_iou = ((1.0 - iou) * weight).sum() / target_scores_sum
         if type(iou) is tuple:
             if len(iou) == 2:
-                # Focus Loss 时返回的是元组类型,进行额外处理
+            
                 loss_iou = ((1.0 - iou[0]) * iou[1].detach() * weight).sum() / target_scores_sum
             else:
                 loss_iou = (iou[0] * iou[1] * weight).sum() / target_scores_sum
         else:
-            # 正常的损失函数
+            
             loss_iou = ((1.0 - iou) * weight).sum() / target_scores_sum
 
         # DFL loss
