@@ -6,7 +6,7 @@ from ultralytics.nn.modules import (AIFI, C1, C2, C3, C3TR, SPP, SPPF, Bottlenec
 import torch
 import torch.nn as nn
 from mmcv.cnn import ConvModule, caffe2_xavier_init, constant_init
-#详细改进流程和操作，请关注B站博主：AI学术叫叫兽 
+
 
 from mmcv.cnn import ConvModule
 
