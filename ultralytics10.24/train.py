@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 
-# 忽略一些警告
+
 import warnings    
 warnings.filterwarnings('ignore')
 
